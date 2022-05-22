@@ -3,10 +3,14 @@ package ru.pl.a7minuteworkout
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.CountDownTimer
+import android.speech.tts.TextToSpeech
+import android.util.Log
 import android.view.View
 import android.widget.Toast
 import androidx.core.content.ContextCompat
 import ru.pl.a7minuteworkout.databinding.ActivityExerciseBinding
+import java.util.*
+import kotlin.collections.ArrayList
 
 class ExerciseActivity : AppCompatActivity() {
     private lateinit var binding: ActivityExerciseBinding
@@ -19,6 +23,8 @@ class ExerciseActivity : AppCompatActivity() {
     private lateinit var exerciseList: ArrayList<ExerciseModel>
     private var currentExercisePosition = -1
 
+    private lateinit var tts: TextToSpeech
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -28,6 +34,7 @@ class ExerciseActivity : AppCompatActivity() {
 
         setSupportActionBar(binding.toolbarExercise)
 
+        setUpTextToSpeech()
 
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
@@ -39,6 +46,25 @@ class ExerciseActivity : AppCompatActivity() {
 
         setupRestView()
 
+    }
+
+    private fun setUpTextToSpeech() {
+        tts = TextToSpeech(this) {
+            if (it == TextToSpeech.SUCCESS) {
+                val result = tts.setLanguage(Locale("RU"))
+                if (result == TextToSpeech.LANG_MISSING_DATA ||
+                    result == TextToSpeech.LANG_NOT_SUPPORTED
+                ) {
+                    Log.e("TTS", "Language problem")
+                }
+            } else {
+                Log.e("TTS", "Initialization problem")
+            }
+        }
+    }
+
+    private fun speak(text: String) {
+        tts.speak(text, TextToSpeech.QUEUE_ADD, null, "")
     }
 
     private fun setupRestView() {
@@ -72,11 +98,13 @@ class ExerciseActivity : AppCompatActivity() {
         binding.ivImage.setImageResource(exerciseList[currentExercisePosition].image)
         binding.tvExerciseName.text = exerciseList[currentExercisePosition].name
 
+        speak(binding.tvExerciseName.text.toString())
+
         setProgressBarExercise()
     }
 
     private fun setProgressBarRest() {
-        restTimer = object : CountDownTimer(10000, 1000) {
+        restTimer = object : CountDownTimer(3000, 1000) {
             override fun onTick(millisUntilFinished: Long) {
                 binding.progressBarRest.progress = progressRest
                 binding.tvTimerRest.text = progressRest.toString()
@@ -95,7 +123,7 @@ class ExerciseActivity : AppCompatActivity() {
 
     private fun setProgressBarExercise() {
 
-        exerciseTimer = object : CountDownTimer(30000, 1000) {
+        exerciseTimer = object : CountDownTimer(3000, 1000) {
             override fun onTick(millisUntilFinished: Long) {
                 binding.progressBarExercise.progress = progressExercise
                 binding.tvTimerExercise.text = progressExercise.toString()
@@ -110,7 +138,7 @@ class ExerciseActivity : AppCompatActivity() {
                 } else {
                     Toast.makeText(
                         applicationContext,
-                        "Поздравляем, вы завершили 7 minute workout!",
+                        "Поздравляем, вы завершили все упражнения!",
                         Toast.LENGTH_SHORT
                     ).show()
                 }
@@ -125,5 +153,8 @@ class ExerciseActivity : AppCompatActivity() {
             restTimer.cancel()
         if (this::exerciseTimer.isInitialized)
             exerciseTimer.cancel()
+
+        tts.stop()
+        tts.shutdown()
     }
 }
