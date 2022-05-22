@@ -2,6 +2,6 @@
 <resources>
 
     <dimen name="mainScreenMainLayoutPadding">5dp</dimen>
-    <dimen name="defaultButtonTextSize">22sp</dimen>
+    <dimen name="defaultTextSize">22sp</dimen>
 
 </resources>

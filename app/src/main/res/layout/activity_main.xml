@@ -32,7 +32,7 @@
             android:text="@string/start"
             android:layout_gravity="center"
             android:textColor="@color/colorPrimary"
-            android:textSize="@dimen/defaultButtonTextSize"
+            android:textSize="@dimen/defaultTextSize"
             android:textStyle="bold" />
 
 

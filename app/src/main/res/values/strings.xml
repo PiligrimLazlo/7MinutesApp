@@ -2,4 +2,7 @@
     <string name="app_name">7MinuteWorkout</string>
     <string name="start">НАЧАТЬ</string>
     <string name="image">start image</string>
+    <string name="getReady">Приготовься</string>
+    <string name="nextExercise">Следующее упражнение:</string>
+    <string name="exerciseName">Название упражнения</string>
 </resources>
