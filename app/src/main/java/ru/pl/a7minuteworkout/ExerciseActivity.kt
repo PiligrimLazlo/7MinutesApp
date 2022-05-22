@@ -76,7 +76,7 @@ class ExerciseActivity : AppCompatActivity() {
     }
 
     private fun setProgressBarRest() {
-        restTimer = object : CountDownTimer(3000, 1000) {
+        restTimer = object : CountDownTimer(10000, 1000) {
             override fun onTick(millisUntilFinished: Long) {
                 binding.progressBarRest.progress = progressRest
                 binding.tvTimerRest.text = progressRest.toString()
@@ -95,7 +95,7 @@ class ExerciseActivity : AppCompatActivity() {
 
     private fun setProgressBarExercise() {
 
-        exerciseTimer = object : CountDownTimer(3000, 1000) {
+        exerciseTimer = object : CountDownTimer(30000, 1000) {
             override fun onTick(millisUntilFinished: Long) {
                 binding.progressBarExercise.progress = progressExercise
                 binding.tvTimerExercise.text = progressExercise.toString()
