@@ -5,4 +5,11 @@
     <string name="getReady">Приготовься</string>
     <string name="nextExercise">Следующее упражнение:</string>
     <string name="exerciseName">Название упражнения</string>
+    <string name="CongratsEndText">Поздравляю!\nВы завершили все упражнения</string>
+    <string name="EndButtonText">Завершить</string>
+    <string name="End">Конец</string>
+    <string name="areYouSure">Вы уверены?</string>
+    <string name="confirmText">Это действие остановит приложение. Вы зашли так далеко, уверены, что хотите прерваться?</string>
+    <string name="buttonYes">Да</string>
+    <string name="buttonNo">Нет</string>
 </resources>
