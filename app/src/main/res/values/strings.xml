@@ -12,4 +12,14 @@
     <string name="confirmText">Это действие остановит приложение. Вы зашли так далеко, уверены, что хотите прерваться?</string>
     <string name="buttonYes">Да</string>
     <string name="buttonNo">Нет</string>
+    <string name="BMI">ИМТ</string>
+    <string name="calculatorBMIText">Калькулятор\nиндекса\nмассы тела</string>
+    <string name="weightInKg">Вес (в кг)</string>
+    <string name="heightInCm">Рост (в см)</string>
+    <string name="YourBMI">Ваш ИМТ</string>
+    <string name="CalculateBMIButton">Рассчитать</string>
+    <string name="heightInFeet">футы</string>
+    <string name="heightInInch">дюймы</string>
+    <string name="weightInPounds">Вес (в фунтах)</string>
+    <string name="History">История</string>
 </resources>

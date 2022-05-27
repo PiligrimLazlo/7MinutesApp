@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.FrameLayout
 import android.widget.Toast
+import ru.pl.a7minuteworkout.databinding.ActivityHistoryBinding
 import ru.pl.a7minuteworkout.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -21,6 +22,16 @@ class MainActivity : AppCompatActivity() {
 
         binding.flStart.setOnClickListener {
             val intent = Intent(this, ExerciseActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.flBMI.setOnClickListener {
+            val intent = Intent(this, BMIActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.flHistory.setOnClickListener{
+            val intent = Intent(this, HistoryActivity::class.java)
             startActivity(intent)
         }
     }

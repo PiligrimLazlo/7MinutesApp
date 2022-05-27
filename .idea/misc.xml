@@ -7,16 +7,23 @@
         <entry key="..\:/Android Course/MyProjects/7MinuteWorkout/app/src/main/res/drawable/button_start.xml" value="0.22962962962962963" />
         <entry key="..\:/Android Course/MyProjects/7MinuteWorkout/app/src/main/res/drawable/circular_progress_bar.xml" value="0.22592592592592592" />
         <entry key="..\:/Android Course/MyProjects/7MinuteWorkout/app/src/main/res/drawable/circular_progress_bar_grey.xml" value="0.22592592592592592" />
+        <entry key="..\:/Android Course/MyProjects/7MinuteWorkout/app/src/main/res/drawable/drawable_radio_grup_tab_background.xml" value="0.22314814814814815" />
+        <entry key="..\:/Android Course/MyProjects/7MinuteWorkout/app/src/main/res/drawable/drawable_units_tab_selector.xml" value="0.22314814814814815" />
+        <entry key="..\:/Android Course/MyProjects/7MinuteWorkout/app/src/main/res/drawable/drawable_units_tab_text_color_selector.xml" value="0.22314814814814815" />
         <entry key="..\:/Android Course/MyProjects/7MinuteWorkout/app/src/main/res/drawable/ic_baseline_check_24.xml" value="0.22314814814814815" />
+        <entry key="..\:/Android Course/MyProjects/7MinuteWorkout/app/src/main/res/drawable/ic_baseline_date_range_24.xml" value="0.22314814814814815" />
         <entry key="..\:/Android Course/MyProjects/7MinuteWorkout/app/src/main/res/drawable/ic_launcher_background.xml" value="0.22962962962962963" />
         <entry key="..\:/Android Course/MyProjects/7MinuteWorkout/app/src/main/res/drawable/item_circular_color_accent_background.xml" value="0.22592592592592592" />
         <entry key="..\:/Android Course/MyProjects/7MinuteWorkout/app/src/main/res/drawable/item_circular_color_accent_border.xml" value="0.22962962962962963" />
         <entry key="..\:/Android Course/MyProjects/7MinuteWorkout/app/src/main/res/drawable/item_circular_color_gray_background.xml" value="0.21481481481481482" />
         <entry key="..\:/Android Course/MyProjects/7MinuteWorkout/app/src/main/res/drawable/item_circular_this_color_accent_border.xml" value="0.22314814814814815" />
         <entry key="..\:/Android Course/MyProjects/7MinuteWorkout/app/src/main/res/drawable/item_color_accent_border_ripple_background.xml" value="0.22962962962962963" />
+        <entry key="..\:/Android Course/MyProjects/7MinuteWorkout/app/src/main/res/drawable/item_color_accent_full_ripple_background.xml" value="0.22314814814814815" />
+        <entry key="..\:/Android Course/MyProjects/7MinuteWorkout/app/src/main/res/layout/activity_bmi.xml" value="0.2" />
         <entry key="..\:/Android Course/MyProjects/7MinuteWorkout/app/src/main/res/layout/activity_exercise.xml" value="0.176" />
         <entry key="..\:/Android Course/MyProjects/7MinuteWorkout/app/src/main/res/layout/activity_finish.xml" value="0.176" />
-        <entry key="..\:/Android Course/MyProjects/7MinuteWorkout/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Android Course/MyProjects/7MinuteWorkout/app/src/main/res/layout/activity_history.xml" value="0.17889492753623187" />
+        <entry key="..\:/Android Course/MyProjects/7MinuteWorkout/app/src/main/res/layout/activity_main.xml" value="0.176" />
         <entry key="..\:/Android Course/MyProjects/7MinuteWorkout/app/src/main/res/layout/dialog_custom_back_confirmation.xml" value="0.2" />
         <entry key="..\:/Android Course/MyProjects/7MinuteWorkout/app/src/main/res/layout/item_exercise_status.xml" value="0.8800000000000001" />
       </map>
