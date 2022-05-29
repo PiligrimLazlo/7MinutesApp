@@ -22,4 +22,7 @@
     <string name="heightInInch">дюймы</string>
     <string name="weightInPounds">Вес (в фунтах)</string>
     <string name="History">История</string>
+    <string name="exercise_date">Дата тренировки:</string>
+    <string name="clearAll">Очистить все</string>
+    <string name="dateFormat">HH:mm dd.MM.yyyy</string>
 </resources>
